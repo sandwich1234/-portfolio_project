@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+*{
+	padding:0px;
+	margin:0px;
+	font-family: Helvetica, Tahoma, Arial;
+}
+
+
+
+
+html,body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-color:black;
+	
+	-webkit-text-size-adjust: none;
+/*	在 IOS 旋轉手機畫面時鎖定文字不縮放*/
+}
+
+
+
+.all{
+	width:100%;
+	height:100%;
+	margin:auto auto;
+/*	border:3px blue solid;*/
+	
+}
+
+.header{
+	height:auto;
+	max-width:1760px;
+	z-index:1;
+	/* background-color:rgb(233, 203, 164); */
+}
+
+/* ----------------LOGO待解決------------------------- */
+.logo{
+	width:100px;
+	height:88px;
+	margin-top:20px;
+}
+
+
+
+.sort{
+	float:right;
+	width:520px;
+}
+
+.sort a{
+	letter-spacing:-1px;
+	font-size:30px;
+	font-weight:normal;
+	line-height:88px;
+	padding-left:10%;
+	color:white;
+	text-decoration:none;
+}
+
+.sort a:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+.full_bg_frame{
+	width:100%;
+	height:100%;
+	margin:auto;
+
+}
+
+
+.full_bg01{
+	width:100%;
+	height:100%;
+	margin:auto;
+	background-image: url("../img/inde_bg1.png");
+	background-size:cover;
+	background-attachment: fixed;
+	position:relative;
+	top:0;
+	bottom:0;
+	display:table;
+}
+
+.full_bg01_inner{
+	max-width:450px;
+	min-width:320px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.full_bg01_inner h1{
+	font-family:"Century Gothic", sans-serif;
+	color:#f9f8f7;
+	font-size:40px;
+	letter-spacing: 15px;
+	text-shadow:0 0 300px #066098;
+	padding:2%;
+}
+
+.full_bg01_inner a{
+	color:#f9f8f7;
+	font-family:"Century Gothic", sans-serif;
+	text-decoration:none;
+	border:2px solid #fff;
+	border-radius: 5px;
+	padding:10px 20px;
+	font-weight: bold;
+	transition:all 0.2s ease-out;
+}
+
+.full_bg01_inner a:hover{
+	color:#bd7286;
+	border:2px solid #bd7286;
+	transition:all 0.2s ease-in;
+}
+
+.full_bg02{
+	width:100%;
+	height:100%;
+	margin:auto;
+	background:url("../img/inde_bg2.png");
+	background-size:cover;
+	background-attachment:fixed;
+	top:0;
+	display:table;
+}
+
+.full_bg02_inner{
+	max-width:450px;
+	min-width:320px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.full_bg02_inner h1{
+	font-family:"Century Gothic", sans-serif;
+	color:#f9f8f7;
+	font-size:40px;
+	letter-spacing: 15px;
+	text-shadow:0 0 300px #066098;
+	padding:2%;
+}
+
+.full_bg02_inner a{
+	color:#f9f8f7;
+	font-family: "Century Gothic", sans-serif;
+	text-decoration:none;
+	border:1px solid #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-weight:bold;
+	transition: all 0.2s ease-out;
+}
+
+.full_bg02_inner a:hover{
+	color:#bd7286;
+	border:2px solid #bd7286;
+	transition:all 0.2s ease-in;
+}
+
+
+.full_bg03{
+	width:100%;
+	height:100%;
+	margin:auto;
+	background:url("../img/inde_bg3.png");
+	background-size:cover;
+	background-attachment:fixed;
+	top:0;
+	display:table;
+}
+
+.full_bg03_inner{
+	max-width:450px;
+	min-width:320px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.full_bg03_inner h1{
+	font-family:"Century Gothic", sans-serif;
+	color:#f9f8f7;
+	font-size:40px;
+	letter-spacing: 15px;
+	text-shadow:0 0 300px #066098;
+	padding:2%;
+}
+
+.full_bg03_inner a{
+	color:#f9f8f7;
+	font-family: "Century Gothic", sans-serif;
+	text-decoration:none;
+	border:1px solid #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-weight:bold;
+	transition: all 0.2s ease-out;
+}
+
+.full_bg03_inner a:hover{
+	color:#bd7286;
+	border:2px solid #bd7286;
+	transition:all 0.2s ease-in;
+}
+
+
+
+/*----------------- 舊版 ------------------------- */
+
+/* .nav{
+	position:absolute;
+	top:43%;
+	left:33%;
+}
+
+.nav .title{
+	width:100%;
+	font-family: Didot-Bold;
+	font-size: 150px;
+	font-weight: normal;
+	letter-spacing: 12px;
+	color: #ffffff;
+}
+
+.square1{
+	width:96px;
+	height:10px;
+	background-color:white;
+	position:absolute;
+	right:0px;
+	bottom:60px;
+}
+
+.square2{
+	width:206px;
+	height:10px;
+	background-color:white;
+	position:absolute;
+	right:0px;
+	bottom:30px;
+} */
+
+.clearfix{
+	clear:both;
+}
