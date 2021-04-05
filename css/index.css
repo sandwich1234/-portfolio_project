@@ -35,9 +35,16 @@ html,body{
 
 .header{
 	height:auto;
-	max-width:1760px;
+	max-width:80%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
 	z-index:1;
 	/* background-color:rgb(233, 203, 164); */
+}
+
+@media screen and (max-width: 700px){
+
 }
 
 /* ----------------LOGO待解決------------------------- */
@@ -54,6 +61,13 @@ html,body{
 	width:520px;
 }
 
+@media screen and (max-width: 650px){
+    .sort{
+    width:100%;
+    margin: 0 auto;
+    }
+}
+
 .sort a{
 	letter-spacing:-1px;
 	font-size:30px;
@@ -62,6 +76,15 @@ html,body{
 	padding-left:10%;
 	color:white;
 	text-decoration:none;
+}
+
+@media screen and (max-width: 700px){
+    .sort a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    }
 }
 
 .sort a:hover{
