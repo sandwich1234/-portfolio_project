@@ -28,38 +28,53 @@ html,body{
 .all{
 	width:100%;
 	height:100%;
-	margin:auto auto;
+	margin:0 auto;
 /*	border:3px blue solid;*/
-	
 }
 
-.header{
-	height:auto;
-	max-width:80%;
-    margin: auto;
-    height: auto;
-    overflow: hidden;
-	z-index:1;
-	/* background-color:rgb(233, 203, 164); */
+
+
+header{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: black;
 }
 
-@media screen and (max-width: 700px){
 
+
+
+
+header .sort{
+	float:right;
+	width:520px;
+	margin: 0 auto;
+}
+
+
+
+header .sort a{
+	letter-spacing:-1px;
+	font-size:20px;
+	font-weight:normal;
+	line-height:88px;
+    font-weight: bold;
+	padding-left:10%;
+    color: white;
+    text-deration: none;
+}
+
+.sort a:hover{
+	color:white;
+	text-decoration: underline;
 }
 
 /* ----------------LOGO待解決------------------------- */
-.logo{
-	width:100px;
-	height:88px;
-	margin-top:20px;
-}
 
 
 
-.sort{
-	float:right;
-	width:520px;
-}
+
+
 
 @media screen and (max-width: 650px){
     .sort{
@@ -68,15 +83,7 @@ html,body{
     }
 }
 
-.sort a{
-	letter-spacing:-1px;
-	font-size:30px;
-	font-weight:normal;
-	line-height:88px;
-	padding-left:10%;
-	color:white;
-	text-decoration:none;
-}
+
 
 @media screen and (max-width: 700px){
     .sort a{
@@ -87,10 +94,6 @@ html,body{
     }
 }
 
-.sort a:hover{
-	color:white;
-	text-decoration: underline;
-}
 
 .full_bg_frame{
 	width:100%;
@@ -104,9 +107,10 @@ html,body{
 	width:100%;
 	height:100%;
 	margin:auto;
-	background-image: url("../img/inde_bg1.png");
+	background-image: url("../img/bg_poster.jpg");
 	background-size:cover;
 	background-attachment: fixed;
+    background-center: 50% 50%;
 	position:relative;
 	top:0;
 	bottom:0;
@@ -130,6 +134,11 @@ html,body{
 	letter-spacing: 15px;
 	text-shadow:0 0 300px #066098;
 	padding:2%;
+    border: 5px solid #fff;
+    max-width: 20%;
+    margin: 0 auto;
+   
+    
 }
 
 .full_bg01_inner a{
@@ -153,9 +162,10 @@ html,body{
 	width:100%;
 	height:100%;
 	margin:auto;
-	background:url("../img/inde_bg2.png");
+	background:url("../img/bg_logo.jpg");
 	background-size:cover;
 	background-attachment:fixed;
+    background-position: center center;
 	top:0;
 	display:table;
 }
@@ -177,6 +187,10 @@ html,body{
 	letter-spacing: 15px;
 	text-shadow:0 0 300px #066098;
 	padding:2%;
+    border: 5px solid #fff;
+    width: 20%;
+    margin: 0 auto;
+   
 }
 
 .full_bg02_inner a{
@@ -201,9 +215,10 @@ html,body{
 	width:100%;
 	height:100%;
 	margin:auto;
-	background:url("../img/inde_bg3.png");
+	background:url("../img/bg_banner.jpg");
 	background-size:cover;
 	background-attachment:fixed;
+    background-position: center 90%;
 	top:0;
 	display:table;
 }
@@ -225,6 +240,10 @@ html,body{
 	letter-spacing: 15px;
 	text-shadow:0 0 300px #066098;
 	padding:2%;
+    border: 5px solid #fff;
+    width: 20%;
+    margin: 0 auto;
+   
 }
 
 .full_bg03_inner a{
