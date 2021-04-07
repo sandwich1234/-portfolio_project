@@ -7,6 +7,7 @@
 	padding:0px;
 	margin:0px;
 	font-family: Helvetica, Tahoma, Arial;
+/*    border:1px blue solid;*/
 }
 
 
@@ -29,7 +30,7 @@ html,body{
 	width:100%;
 	height:100%;
 	margin:0 auto;
-/*	border:3px blue solid;*/
+	
 }
 
 
@@ -37,7 +38,6 @@ html,body{
 header{
 	width: 100%;
 	height: auto;
-	overflow: hidden;
 	background-color: black;
 }
 
@@ -61,7 +61,7 @@ header .sort a{
     font-weight: bold;
 	padding-left:10%;
     color: white;
-    text-deration: none;
+    text-decoration: none;
 }
 
 .sort a:hover{
@@ -76,30 +76,58 @@ header .sort a{
 
 
 
-@media screen and (max-width: 650px){
-    .sort{
-    width:100%;
-    margin: 0 auto;
-    }
-}
 
 
 
 @media screen and (max-width: 700px){
-    .sort a{
+    header .sort{
+    text-align:center;
+    }
+
+
+    header .sort a{
     display: block;
     width: 100%;
     text-align: center;
-    padding-left: 0;
+    padding-left:0px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-decoration: none;
     }
 }
 
 
+@media screen and (max-device-width: 700px){
+    header .sort{
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+    }    
+    
+    header .sort a{
+    width: 100%;
+    display: block;
+    padding-left: 0px;
+    font-size: 40px;
+    padding-bottom: 40px;
+    }
+
+
+/*  這邊語法有毒阿~~~~~~~~~~~~
+    header .sort a{
+    font-size: 40px;
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 40px;
+*/
+}
+
 .full_bg_frame{
 	width:100%;
-	height:100%;
+	height: 100%;
 	margin:auto;
-
 }
 
 
@@ -108,12 +136,11 @@ header .sort a{
 	height:100%;
 	margin:auto;
 	background-image: url("../img/bg_poster.jpg");
-	background-size:cover;
 	background-attachment: fixed;
-    background-center: 50% 50%;
+    background-size: cover;
 	position:relative;
 	top:0;
-	bottom:0;
+	left: 0;
 	display:table;
 }
 
@@ -135,11 +162,36 @@ header .sort a{
 	text-shadow:0 0 300px #066098;
 	padding:2%;
     border: 5px solid #fff;
-    max-width: 20%;
+    width: 20%;
     margin: 0 auto;
+    margin-bottom: 250px;
    
+}
+
+@media screen and (max-width:1500px ){
+    .full_bg01_inner h1{
+    font-size: 30px;
+    width: 15%;
+    }
     
 }
+
+@media screen and (max-width: 1300px){
+    .full_bg01_inner h1{
+    width: 200px;
+    padding: 25px;
+    }
+}
+
+/*手機裝置要寫成 max-deivce-width  更改bg部分*/
+@media screen and (max-device-width:750px) {
+    .full_bg01_inner h1{
+    font-size: 50px;
+    width: 300px;
+    }
+}
+
+
 
 .full_bg01_inner a{
 	color:#f9f8f7;
@@ -190,8 +242,34 @@ header .sort a{
     border: 5px solid #fff;
     width: 20%;
     margin: 0 auto;
+/*    margin-bottom: 250px;*/
    
 }
+
+
+@media screen and (max-width:1500px ){
+    .full_bg02_inner h1{
+    font-size: 30px;
+    width: 15%;
+    }
+    
+}
+
+@media screen and (max-width: 1300px){
+    .full_bg02_inner h1{
+    width: 200px;
+    padding: 25px;
+    }
+}
+
+/*手機裝置要寫成 max-deivce-width*/
+@media screen and (max-device-width:750px) {
+    .full_bg02_inner h1{
+    font-size: 50px;
+    width: 300px;
+    }
+}
+
 
 .full_bg02_inner a{
 	color:#f9f8f7;
@@ -243,7 +321,32 @@ header .sort a{
     border: 5px solid #fff;
     width: 20%;
     margin: 0 auto;
+/*    margin-bottom: 250px;*/
    
+}
+
+
+@media screen and (max-width:1500px ){
+    .full_bg03_inner h1{
+    font-size: 30px;
+    width: 15%;
+    }
+    
+}
+
+@media screen and (max-width: 1300px){
+    .full_bg03_inner h1{
+    width: 200px;
+    padding: 25px;
+    }
+}
+
+/*手機裝置要寫成 max-deivce-width*/
+@media screen and (max-device-width:750px) {
+    .full_bg03_inner h1{
+    font-size: 50px;
+    width: 300px;
+    }
 }
 
 .full_bg03_inner a{

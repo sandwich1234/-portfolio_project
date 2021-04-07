@@ -55,10 +55,11 @@ span{
 	}
 }
 
+
 header{
 	width: 100%;
 	height: auto;
-	overflow: hidden;
+    overflow: hidden;
 	background-color: black;
 }
 
@@ -66,19 +67,15 @@ header{
 
 
 
-.sort{
+header .sort{
 	float:right;
 	width:520px;
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 800px){
-	.sort{
-		float: none;
-	}
-}
 
-.sort a{
+
+header .sort a{
 	letter-spacing:-1px;
 	font-size:20px;
 	font-weight:normal;
@@ -86,11 +83,67 @@ header{
     font-weight: bold;
 	padding-left:10%;
     color: white;
+    text-decoration: none;
 }
 
 .sort a:hover{
 	color:white;
 	text-decoration: underline;
+}
+
+/* ----------------LOGO待解決------------------------- */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+    header .sort{
+    text-align:center;
+    }
+
+
+    header .sort a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left:0px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-decoration: none;
+    }
+}
+
+
+@media screen and (max-device-width: 700px){
+    header .sort{
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+    }    
+    
+    header .sort a{
+    width: 100%;
+    display: block;
+    padding-left: 0px;
+    font-size: 40px;
+    padding-bottom: 40px;
+    }
+
+
+/*  這邊語法有毒阿~~~~~~~~~~~~
+    header .sort a{
+    font-size: 40px;
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 40px;
+*/
 }
 
 
