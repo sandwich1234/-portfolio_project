@@ -40,40 +40,6 @@ ul, li{
 /*	border:3px blue solid;*/
 }
 
-#top-head{
-	width: 100%;
-	height: 88px;
-	background-color: black;
-}
-
-
-
-
-
-#top-head .sort{
-	float:right;
-	width:520px;
-	margin: 0 auto;
-    
-}
-
-
-
-#top-head .sort a{
-	letter-spacing:-1px;
-	font-size:20px;
-	font-weight:normal;
-	line-height:88px;
-    font-weight: bold;
-	padding-left:10%;
-    color: white;
-    text-decoration: none;
-}
-
-#top-head a:hover{
-	color:white;
-	text-decoration: underline;
-}
 
 @media screen and (max-width: 1700px){
 	.all{
@@ -86,61 +52,91 @@ ul, li{
 }
 
 
-    #top-head{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        background-color: black;
+header{
+	width: 100%;
+	height: auto;
+    overflow: hidden;
+	background-color: black;
+}
+
+
+
+
+
+header .sort{
+	float:right;
+	width:520px;
+	margin: 0 auto;
+}
+
+
+
+header .sort a{
+	letter-spacing:-1px;
+	font-size:20px;
+	font-weight:normal;
+	line-height:88px;
+    font-weight: bold;
+	padding-left:10%;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+    header .sort{
+    text-align:center;
     }
 
 
+    header .sort a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left:0px;
+    margin: 0 auto;
+    font-size: 25px;
+    text-decoration: none;
+    }
+}
 
 
-
-    #top-head .sort{
-        float:right;
-        width:520px;
-        margin: 0 auto;
-        margin-right: 20px;
-		display: flex;
-		
+@media screen and (max-device-width: 700px){
+    header .sort{
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+    }    
+    
+    header .sort a{
+    width: 100%;
+    display: block;
+    padding-left: 0px;
+    font-size: 40px;
+    padding-bottom: 40px;
     }
 
 
-
-    #top-head .sort a{
-        letter-spacing:-1px;
-        font-size:20px;
-        font-weight:normal;
-        line-height:88px;
-        font-weight: bold;
-        padding-left:10%;
-        color: white;
-        text-decoration: none;
-    }
-
-    #top-head a:hover{
-        color:white;
-        text-decoration: underline;
-    }
+/*  這邊語法有毒阿~~~~~~~~~~~~
+    header .sort a{
+    font-size: 40px;
+    display:block;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 40px;
+*/
+}
 
 
-    @media screen and (max-width: 700px){
-        #top-head .sort{
-        text-align:center;
-        }
 
 
-        #top-head .sort a{
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding-left:0px;
-        margin: 0 auto;
-        font-size: 25px;
-        text-decoration: none;
-        }
-    }
+
+
+
+   
+
+
+    
 
 
 /* ----------------LOGO待解決------------------------- */
@@ -605,62 +601,3 @@ li:before{
 	clear:both
 }
 
-
-@media screen and (max-width: 1700px){
-	
-    #top-head{
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        background-color: black;	
-    }
-
-
-
-
-
-    #top-head .sort{
-        float:right;
-        width:520px;
-        margin: 0 auto;
-        margin-right: 20px;
-    }
-
-
-
-    #top-head .sort a{
-        letter-spacing:-1px;
-        font-size:20px;
-        font-weight:normal;
-        line-height:88px;
-        font-weight: bold;
-        padding-left:10%;
-        color: white;
-        text-decoration: none;
-    }
-
-    #top-head a:hover{
-        color:white;
-        text-decoration: underline;
-    }
-}
-
-
-    @media screen and (max-width: 700px){
-        #top-head .sort{
-        text-align:center;
-		display: flex;
-		flex-direction: column;
-        }
-
-
-        #top-head .sort a{
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding-left:0px;
-        margin: 0 auto;
-        font-size: 25px;
-        text-decoration: none;
-        }
-    }

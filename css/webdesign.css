@@ -29,7 +29,6 @@ html,body{
 	float:right;
 	width:520px;
 	margin: 0 auto;
-    
 }
 
 
@@ -489,17 +488,17 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-    header{
+    #top-head{
         display: flex;
     }
 
-    header ul{
+    #top-head ul{
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    header ul li{
+    #top-head ul li{
         display: block;
         width: 50%;
         padding: 0;
@@ -529,30 +528,27 @@ footer{
 
 
 
-
-
-@media screen and (max-width: 1700px){
-	
-    #top-head{
+    
+    
+#top-head{
         width: 100%;
         height: auto;
         overflow: hidden;
         background-color: black;
     }
-
-
-
-
-
+    
+    
+    
+    
+    
     #top-head .sort{
         float:right;
         width:520px;
         margin: 0 auto;
-        margin-right: 20px;
     }
-
-
-
+    
+    
+    
     #top-head .sort a{
         letter-spacing:-1px;
         font-size:20px;
@@ -563,30 +559,48 @@ footer{
         color: white;
         text-decoration: none;
     }
-
-    #top-head a:hover{
-        color:white;
-        text-decoration: underline;
-    }
-}
-
-
+    
     @media screen and (max-width: 700px){
         #top-head .sort{
         text-align:center;
         }
-
-
+    
+    
         #top-head .sort a{
-        letter-spacing: 0;
         display: block;
         width: 100%;
         text-align: center;
-        padding-left:0;
+        padding-left:0px;
         margin: 0 auto;
         font-size: 25px;
         text-decoration: none;
         }
     }
-
-
+    
+    
+    @media screen and (max-device-width: 700px){
+        #top-head .sort{
+        float: none;
+        padding-top: 20px;
+        text-align: center;
+        }    
+        #top-head .sort a{
+        width: 100%;
+        display: block;
+        padding-left: 0px;
+        font-size: 40px;
+        padding-bottom: 40px;
+        }
+    
+    
+    /*  這邊語法有毒阿~~~~~~~~~~~~
+        header .sort a{
+        font-size: 40px;
+        display:block;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 40px;
+    */
+    }
+    
