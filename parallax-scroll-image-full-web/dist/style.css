@@ -1,0 +1,105 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.p-content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.p-content01 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  display: table;
+}
+.p-content01_inner {
+  max-width: 450px;
+  min-width: 320px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.p-content01_inner h1 {
+  font-family: "Century Gothic", sans-serif;
+  color: #f9f8f7;
+  font-size: 40px;
+  text-shadow: 0 0 300px #ff0;
+}
+.p-content01_inner a {
+  color: #f9f8f7;
+  font-family: "Century Gothic", sans-serif;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+.p-content01_inner a:hover {
+  color: #bd7286;
+  border: 2px solid #bd7286;
+  transition: all 0.2s ease-in;
+}
+.p-content02 {
+  max-width: 750px;
+  min-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+.p-content02 p {
+  font-size: 100%;
+  color: #3c2f2f;
+}
+.p-content03 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(https://images.pexels.com/photos/1089451/pexels-photo-1089451.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  display: table;
+}
+.p-content03_inner {
+  max-width: 450px;
+  min-width: 320px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.p-content03_inner h2 {
+  font-family: "Century Gothic", sans-serif;
+  color: #f9f8f7;
+  font-size: 40px;
+  text-shadow: 0 0 300px #ff3c41;
+}
+.p-content03_inner a {
+  color: #f9f8f7;
+  font-family: "Century Gothic", sans-serif;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+.p-content03_inner a:hover {
+  color: #3e7757;
+  border: 1px solid #3e7757;
+  transition: all 0.2s ease-in;
+}
