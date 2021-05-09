@@ -1,0 +1,511 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    color: #fff;
+    background:#222;
+}
+
+
+#top-head{
+	width: 100%;
+	height: auto;
+    overflow: hidden;
+	background-color: black;
+    position:fixed;
+    z-index:2;
+}
+
+
+
+
+
+#top-head .sort{
+	float:right;
+	width:520px;
+	margin: 0 auto;
+	margin-right: 20px;
+}
+
+
+
+#top-head .sort a{
+	letter-spacing:-1px;
+	font-size:20px;
+	font-weight:normal;
+	line-height:88px;
+    font-weight: bold;
+	padding-left:10%;
+    color: white;
+    text-decoration: none;
+}
+
+#top-head a:hover{
+	color:white;
+	text-decoration: underline;
+}
+
+.app{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    z-index:1;
+}
+
+.app header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #000;
+}
+
+header .logo img{
+    vertical-align: bottom;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+header li:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+header ul li a{
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    width: 100%;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    height: 400px;
+}
+
+.banner img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.banner .banner-left{
+    width:10%;
+    background: #000;
+    position: relative;
+}
+
+.banner .banner-left .txt1{
+    color: white;
+    position: absolute;
+    top: 30%;
+    transform: rotate(-90deg);
+}
+
+.banner .banner-left .txt1 h1{
+    font-size: 30px;
+}
+
+
+
+
+.banner .banner-right{
+    width:90%;
+    position: relative;
+    background-image:url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.banner .banner-right .txt2{
+    position: absolute;
+    width: 28%;
+    top: 20%;
+    left: 10%;
+}
+
+.banner .banner-right .txt2 h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner .banner-right .txt2 p{
+    padding-top: 25px;
+    line-height: 1.3;
+    letter-spacing: 1.2;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#s1{
+    background-color: #000;
+    color: white;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+#s1 .new-photo{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    background-image:url("../img/new-photo.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#s1 .new{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#s1 .txt{
+    width: 70%;
+}
+
+#s1 .new h2{
+    font-size: 40px;
+}
+
+#s1 .new ul{
+    padding-top:2%;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+#s1 .new input{
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 5px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+}
+
+.wrap{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    text-align: center;
+}
+
+
+.wrap .item{
+    background-image:url("../img/city.jpg");  
+}
+
+.wrap h2{
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height:auto;
+    padding: 5% 0;
+}
+
+.project  .project-outer{
+    width: 25%;
+    margin: 30px;
+    text-align: center;
+    transition: transform .5s;
+    background-color:#aaa;
+}
+
+
+
+.project-outer a{
+    text-decoration: none;
+}
+
+.project  .project-outer:hover{
+    transform: translateY(-50px);
+    box-shadow: 3px 3px 6px 3px #555;
+}
+
+
+.project .project-outer img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+.project .project-outer .txt{
+    padding: 0 20px;
+}
+
+.project .project-outer .txt h2{
+    display:block;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    padding-top: 15px;
+}
+
+.project .project-outer .line{
+    width: 70%;
+    border-top: 2px solid #000;
+    margin: auto;
+    margin-top:10px;
+}
+
+/* .project .project-outer .txt P:before{
+    content:"";
+    display:block;
+    width: 90%;
+    height:2px;
+    background-color:black;
+    margin: auto;
+
+} */
+
+.project .project-outer .txt p{
+    color: black;
+    margin: 12px 20px;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/* .project .project-outer h2:before{
+    content:"";
+    border-top: 50px solid transparent;
+    border-left: 150px solid #aaa;
+    border-right: 150px solid #aaa;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    right: 0px;
+} */
+
+
+.product{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+.product .txt{
+    padding-left: 10%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:linear-gradient(50deg,#000 30%, 
+    transparent 70%),
+     url("../img/product.jpg");
+     background-position: center center;
+     background-size: cover;
+}
+
+.product .txt h1{
+    font-size: 50px;
+}
+
+.product2{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.product2 h1{
+    width: 60%;
+}
+
+.product2 h1 img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.product2 .txt{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+
+.product2 img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.product2 .txt h2{
+    font-size: 40px;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.product2 .txt p{
+    line-height: 1.3;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.intro{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+}
+
+.intro h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.intro .item {
+    margin: 50px;
+    height: auto;
+    overflow: hidden;
+}
+
+.intro ul{
+    font-weight: 300;
+}
+
+.intro ul li{
+    line-height: 25px;
+}
+
+.intro ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RWD------------------------------- */
+
+@media screen and (max-width: 1080px){
+    header{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner{
+        height: 300px;
+    }
+    .banner .banner-left{
+        display: none;
+    }
+
+    .banner .banner-right{
+        width: 100%;
+    }
+
+    .banner .banner-right .txt2{
+        width: 50%;
+    }
+
+    #s1{
+        padding-top: 0;
+        flex-wrap:wrap;
+        height: auto;
+    }
+
+    #s1 .new-photo{
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+
+    #s1 .new{
+        padding: 5% 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    #s1 .new .txt{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .project{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project .project-outer{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        background-color: #aaa;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+    
+    .intro .item{
+        text-align: center;
+        width: 50%;
+        margin: 30px 0;
+    }
+}
